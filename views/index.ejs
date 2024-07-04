@@ -1,0 +1,17 @@
+<%-include('./partials/header')%>
+
+<h2 class="text-center text-2xl mt-10"><%= user.name%></h2>
+<p class="text-center" ><%= user.email%></p>
+<p class="w-max m-auto mt-2 bg-stone-800 text-white px-5 py-2"><a href="/logout">Logout</a></p>
+
+<div class="w-full p-10 flex gap-10 flex-wrap">
+    <%post.forEach((post)=>{%>
+        <div class="w-[30vw] h-[60vh] shrink-0 border-2 border-stone-800 p-5">
+            <img src="<%= post.image%>" alt="image" class="w-full h-[70%]">
+            <h2><%= post.title%></h2>
+            <p><%= post.description%></p>
+        </div>
+    <%})%>
+</div>
+
+<%-include('./partials/footer')%>

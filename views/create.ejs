@@ -1,0 +1,15 @@
+<%-include('./partials/header')%>
+
+
+
+<form action="/createPost" method="post" class="w-[60%] border-2 border-stone-800 p-5 mt-20 m-auto">
+    <input type="text" name="title" placeholder="Enter title" class="w-full p-5 text-xl bg-stone-800 text-white">
+    <input type="url" name="image" placeholder="Enter Imgae url" class="w-full p-5 text-xl bg-stone-800 text-white mt-10">
+    <input type="text" name="description" placeholder="Enter Post Description" class="w-full p-5 text-xl bg-stone-800 text-white mt-10">
+    <button class="w-full p-5 text-xl bg-stone-800 text-white mt-10">Create Post</button>
+</form>
+
+
+
+
+<%-include('./partials/footer')%>
